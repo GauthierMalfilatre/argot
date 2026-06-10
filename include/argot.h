@@ -108,4 +108,9 @@ size_t argotGetSize(argotParser *parser, const char *name, size_t default_v);
 double argotGetDouble(argotParser *parser, const char *name, double default_v);
 /** @} */
 
+/**
+ * @brief Clear argot parser
+ */
+void argotClear(argotParser *parser);
+
 #endif /* ARGOT_H */

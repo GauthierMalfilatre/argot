@@ -47,6 +47,6 @@ void argotAddArgument(
     narg->alias = alias;
     narg->type = type;
     narg->founded = false;
-    narg->multiple_answer = false;
+    narg->multiple_answer = multiple_answer;
     parser->nargs = nsize;
 }
