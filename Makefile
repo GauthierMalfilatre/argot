@@ -4,7 +4,8 @@
 ## File description:
 ## Makefile
 ##
-SRC = 	src/argot_add_arg.c
+SRC = 	src/argot_add_arg.c \
+		src/argot_parse.c \
 
 NAME = libargot.a
 
