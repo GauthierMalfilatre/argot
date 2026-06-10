@@ -109,6 +109,11 @@ double argotGetDouble(argotParser *parser, const char *name, double default_v);
 /** @} */
 
 /**
+ * @brief Init argot parsesr
+ */
+void argot_init(argotParser *parser);
+
+/**
  * @brief Clear argot parser
  */
 void argotClear(argotParser *parser);
