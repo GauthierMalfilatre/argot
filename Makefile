@@ -6,6 +6,7 @@
 ##
 SRC = 	src/argot_add_arg.c \
 		src/argot_parse.c \
+		src/argot_get.c \
 
 NAME = libargot.a
 
