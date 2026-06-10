@@ -17,7 +17,7 @@ NAME =  libargot.a
 CC =    gcc
 AR =    ar rc
 
-CFLAGS += -Wall -Wextra -O3 -g
+CFLAGS += -Wall -Wextra -O3
 CPPFLAGS += -Iinclude/
 
 all: $(NAME)
