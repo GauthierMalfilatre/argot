@@ -12,7 +12,6 @@
     #include <stdbool.h>
 
     #define ARGOT_MAX_ARG_NAME 16
-    #define ARGOT_MAX_ALIAS     4
 
 ///////////////////////////////////////////////////////////////////////////////
 /**
@@ -50,7 +49,7 @@ typedef enum argot_type_e {
 typedef struct argot_arg_s  {
 
     char      name[ARGOT_MAX_ARG_NAME];  //!< The name (like --verbose)
-    char      alias[ARGOT_MAX_ALIAS];    //!< The alias (like -v)
+    char      alias;                     //!< The alias (like -v)
     bool      founded;                   //!< Is founded ?
     argotType type;                      //!< The type of the argument
     union {

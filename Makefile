@@ -4,19 +4,20 @@
 ## File description:
 ## Makefile
 ##
-SRC = 	src/
+SRC = 	src/argot_add_arg.c
 
 NAME = libargot.a
 
 CC = ar rc
-CLFAGS = -Wall -Wextra -O3 -g
+CLFAGS += -Wall -Wextra -O3 -g
+LDFLAGS += -Iinclude/
 
 OBJ = $(SRC:.c=.o)
 
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	$(CC) $(NAME) $(OBJ) $(CLFAGS)
+	$(CC) $(NAME) $(OBJ)
 
 clean:
 	rm -f $(OBJ)
