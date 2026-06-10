@@ -20,3 +20,6 @@ libargot.so
 # Build
 Release/
 Debug/
+
+# Test
+test
